@@ -35,7 +35,7 @@ namespace Area_Calculator
 
             double result = calculate.CalculateArea(lengths, widths);
             txtrecent.Text = result.ToString();
-            listresult.Items.Add(result);
+            listresult.Items.Add("The are of Reactangle is " +result);
         }
 
         private void btncircle_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Area_Calculator
 
             double result = calculator.CalculateArea(radiuss);
             txtrecent.Text = result.ToString();
-            listresult.Items.Add(result);
+            listresult.Items.Add("The are of Circle is " + result);
         }
 
         private void btnclear_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace Area_Calculator
 
             double result = calulate.CalculateArea(bases, heights, istriangle);
             txtrecent.Text = result.ToString();
-            listresult.Items.Add(result);
+            listresult.Items.Add("The are of Triangle is " +result);
         }
     }
 }
